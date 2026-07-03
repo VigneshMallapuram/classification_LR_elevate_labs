@@ -97,14 +97,14 @@ Logistic Regression performs better when all features are on a similar scale.
 The standardization formula is:
 
 [
-z=\frac{x-\mu}{\sigma}
+z=(x-mu)/sigma
 ]
 
 where:
 
 * (x) = Feature value
-* (\mu) = Mean
-* (\sigma) = Standard deviation
+* (mu) = Mean
+* (sigma) = Standard deviation
 
 ---
 
@@ -124,7 +124,7 @@ model.fit(X_train, y_train)
 Logistic Regression uses the **Sigmoid Function** to convert linear outputs into probabilities between 0 and 1.
 
 [
-\sigma(z)=\frac{1}{1+e^{-z}}
+sigma(z)={1}/{1+e^{-z}}
 ]
 
 where
@@ -157,7 +157,7 @@ The classifier was evaluated using the following metrics.
 Measures the percentage of correctly classified samples.
 
 [
-Accuracy=\frac{TP+TN}{TP+TN+FP+FN}
+Accuracy={TP+TN}/{TP+TN+FP+FN}
 ]
 
 ---
@@ -167,7 +167,7 @@ Accuracy=\frac{TP+TN}{TP+TN+FP+FN}
 Measures how many predicted positive cases are actually positive.
 
 [
-Precision=\frac{TP}{TP+FP}
+Precision={TP}/{TP+FP}
 ]
 
 ---
@@ -177,7 +177,7 @@ Precision=\frac{TP}{TP+FP}
 Measures how many actual positive cases are correctly identified.
 
 [
-Recall=\frac{TP}{TP+FN}
+Recall={TP}/{TP+FN}
 ]
 
 ---
@@ -236,10 +236,10 @@ The Logistic Regression model achieved excellent performance on the Breast Cance
 
 Typical output:
 
-* Accuracy: ~98%
-* Precision: ~97–99%
-* Recall: ~98–100%
-* ROC-AUC: ~0.99
+* Accuracy: 96.4%
+* Precision: 97.5%
+* Recall: 92.8%
+* ROC-AUC: 99.6%
 
 The exact values may vary slightly depending on the train-test split.
 
